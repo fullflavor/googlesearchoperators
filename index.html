@@ -14,167 +14,132 @@
 
 
 <nav id="navbar">
-    <header>JS Documentation</header>
+    <header>Google Search Operators</header>
      <ul> 
       <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
-      <a class="nav-link" href="#What_you_should_already_know" rel="internal"><li>What you should already know</li></a>
-      <a class="nav-link" href="#JavaScript_and_Java" rel="internal"><li>JavaScript and Java</li></a>
-      <a class="nav-link" href="#Hello_world" rel="internal"><li>Hello world</li></a>
-      <a class="nav-link" href="#Variables" rel="internal"><li>Variables</li></a>
-      <a class="nav-link" href="#Declaring_variables" rel="internal"><li>Declaring variables</li></a>
-      <a class="nav-link" href="#Variable_scope" rel="internal"><li>Variable scope</li></a>
-      <a class="nav-link" href="#Global_variables" rel="internal"><li>Global variables</li></a>
-      <a class="nav-link" href="#Constants" rel="internal"><li>Constants</li></a>
-      <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
-    </ul>
-  </nav>
+      <a class="nav-link" href="#Filetype" rel="internal"><li>Filetype</li></a>
+      <a class="nav-link" href="#Define" rel="internal"><li>Define</li></a>
+      <a class="nav-link" href="#intitle" rel="internal"><li>intitle</li></a>
+      <a class="nav-link" href="#allintitle" rel="internal"><li>allintitle</li></a>
+      <a class="nav-link" href="#inurl" rel="internal"><li>inurl</li></a>
+      <a class="nav-link" href="#allinurl" rel="internal"><li>allinurl</li></a>
+      <a class="nav-link" href="#intext" rel="internal"><li>intext</li></a>
+      <a class="nav-link" href="#allintext" rel="internal"><li>allintext</li></a>
+      <a class="nav-link" href="#site" rel="internal"><li>site</li></a>
+     </ul> 
+</nav>
      
-   <main id="main-doc">
-        <section class="main-section" id="Introduction">
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
       <header>Introduction</header>
    <article>  
-        <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+        <p>For anyone that’s been doing SEO for any amount of time, Google advanced search operators—i.e., special commands that make regular  searches seem laughably basic in comparison—are nothing new. It’s fairly easy to remember most search operators. They’re short commands that you can recall quickly. But knowing how to use them effectively is an altogether different story.</p>
   
-  <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+  <p>Google’s catalog of information is a huge place. It’s a universe in and of itself with more information than it is possible to process in a lifetime. Search operators can be useful in finding a specific article title, even researching an author, or looking for guest posting opportunities for your business. Whether you are a digital marketer, a student, or casual Google user, search operators are an incredibly powerful tool for research that can be useful in your day-to-day browsing experience. </p>
+
+  <p>Did you know that Google is constantly doing away with  useful operators?</p>
+
+    <li>That’s why most existing lists of Google search operators are outdated and inaccurate.</li>
+    
+    <li>For this project, I personally tested EVERY search operator that I list.</li>
+    
+    <li>On the left is a  list of all working, non‐working, and “hit and miss” Google advanced search operators as of 2019.</li>
   
-  <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-  <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
-        </artice>
-      </section>
+   </artice>
+  </section>
   
   
-  <section class="main-section" id="What_you_should_already_know">
-      <header>What you should already know</header>
+  <section class="main-section" id="Filetype">
+      <header>Filetype:</header>
       <article>
-        <p>This guide assumes you have the following basic background:</p>
+        <p>Restrict results to those of a certain filetype. E.g., PDF, DOCX, TXT, PPT, etc. Note: The “ext:” operator can also be used—the results are identical.</p>
+        <li>Note: The “ext:” operator can also be used—the results are identical.</li>
+        <li>When you don’t specify a File Format in the Advanced Search Form or the filetype: operator, Google searches a variety of file formats;</li>
+        <code>Example: Samsung filetype:pdf / Samsung ext:pdf</code>
+      </artice>
+ </section>
   
-        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-  <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-        </artice>
-      </section>
-  
-  <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript and Java</header>
-      <article>
-      <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
-  
-  <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
-  <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
-      </article>
-      </section>
-  
-  <section class="main-section" id="Hello_world">
-      <header>Hello world</header>
-      <article> 
-  To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
-  <code>function greetMe(yourName) {
-    alert("Hello " + yourName);
-  }
-  greetMe("World");
-  </code>
-  
-  Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
-      </article>
-      </section>
-  
-  <section class="main-section" id="Variables">
-      <header>Variables</header>
+  <section class="main-section" id="Define">
+      <header>Define:</header>
     <article>
-      <p>
-  You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
-      </p>
-      <p>
-  A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
-      </p>
-      <p>
-  You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers.
-  
-  Some examples of legal names are Number_hits, temp99, and _name.
-      </p>
+      <p>A dictionary built into Google, basically. This will display the meaning of a word in a card‐like result in the SERPs.</p>
+      <li>If you start your query with define:, Google shows definitions from pages on the web for the term that follows</li>
+      <li>This advanced search operator is useful for finding definitions of words, phrases, and acronyms.</li>
+      <code>For example, [ define: blog ] will show definitions for “Blog” (weB LOG).</code>
     </article>
-     
-      </section>
+ </section>
   
-  <section class="main-section" id="Declaring_variables">
-      <header>Declaring variables</header>
-      <article>
-  You can declare a variable in three ways:
-        <p>
-        With the keyword var. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.
-        </p>
-        <p>
-          By simply assigning it a value. For example, <code>x = 42.</code> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
-        </p>
-        <p>
-          With the keyword let. For example,<code> let y = 13.</code> This syntax can be used to declare a block scope local variable. See Variable scope below.
-        </p>
+  <section class="main-section" id="intitle">
+      <header>intitle:</header>
+      <article> 
+        <p>Find pages with a certain word (or words) in the title.</p>
+        <p> This functionality can also be obtained through the Advanced Web Search page, under Occurrences.</p>
+        <p>In my example, any results containing the word “Full Stack” in the title tag will be returned.</p>
+        <code>Example: intitle:Full Stack</code>
       </article>
-      </section>
+  </section>
   
-  <section class="main-section" id="Variable_scope">
-      <header>Variable scope</header>
-      <article>
-       <p> When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+  <section class="main-section" id="allintitle">
+      <header>allintitle:</header>
+    <article>
+      <p>Similar to “intitle,” but only results containing all of the specified words in the title tag will be returned.</p>
+      <p>This functionality can also be obtained through the Advanced Web Search page, under Occurrences.</p>
+      <p>In Image Search, the operator allintitle: will return images in files whose names contain the terms that you specify.</p>
+      <p>In Google News, the operator allintitle: will return articles whose titles include the terms you specify.</p>
+      <code>Example: allintitle:Visual Studio Code</code>
+    </article>
+  </section>
   
-  <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
-  <code>if (true) {
-    var x = 5;
-  }
-  console.log(x);  // 5</code>
-        <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+  <section class="main-section" id="inurl">
+      <header>inurl:</header>
+   <article>
+      <p>Find pages with a certain word (or words) in the URL.</p>
+      <p>There must be no space between the inurl: and the following word.</p>
+      <p>In URLs, words are often run together. They need not be run together when you’re using inurl:.</p>
+      <code>Example: inurl:Java Script</code>
+   </article>
+  </section>
   
-  <code>if (true) {
-    let y = 5;
-  }
-  console.log(y);  
-  // ReferenceError: y is not defined</code>
-      </article>
-      </section>
+  <section class="main-section" id="allinurl">
+      <header>allinurl:</header>
+   <article>
+      <p>Similar to “inurl,” but only results containing all of the specified words in the URL will be returned.</p>
+      <p>In URLs, words are often run together. They need not be run together when you’re using allinurl:.</p>
+      <p>When using allinurl: in your query, do not include any other search operators.</p>
+      <p>The functionality of allinurl: is also available through the Advanced Web Search page, under Occurrences.</p>
+      <code>Example: allinurl:Github</code>
+   </article>
+  </section>
   
-  <section class="main-section" id="Global_variables">
-      <header>Global variables</header>
-      <article>
-  <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+  <section class="main-section" id="intext">
+      <header>intext:</header>
+   <article>
+      <p>Find pages containing a certain word (or words) somewhere in the content.</p>
+      <p>There must be no space between the intext: and the following word.</p>
+      <p>Putting intext: in front of every word in your query is equivalent to putting allintext: at the front of your query</p>
+      <code>Example: intext:Codepen</code>
+   </article>
+  </section>
   
-  <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
-      </article>
-      </section>
+  <section class="main-section" id="allintext">
+      <header>allintext:</header>
+   <article>
+     <p>Similar to “intext,” but only results containing all of the specified words somewhere on the page will be returned.</p>
+     <p> This functionality can also be obtained through the Advanced Web Search page, under Occurrences.</p>
+     <code>Example: allintext:apple iphone</code>
+   </article>
+  </section>
   
-  <section class="main-section" id="Constants">
-      <header>Constants</header>
-      <article>
-  <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
-  
-        <code>const PI = 3.14;</code>
-  <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
-  
-  <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
-  
-  <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-  
-  <code>// THIS WILL CAUSE AN ERROR
-  function f() {};
-  const f = 5;
-  // THIS WILL CAUSE AN ERROR ALSO
-  function f() {
-    const g = 5;
-    var g;
-    //statements
-  }</code>
-  However, object attributes are not protected, so the following statement is executed without problems.
-  <code>const MY_OBJECT = {"key": "value"};
-  MY_OBJECT.key = "otherValue";</code>
-      </article>
-      </section>
-  
-  <section class="main-section" id="Reference">
-      <header>Reference</header>
-      <article>
-        <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
-      </article>
-      </section>
-     </main>
+  <section class="main-section" id="site">
+     <header>site:</header>
+   <article>
+    <p>Limit results to those from a specific website.</p>
+    <p>Do not include a space between the “site:” and the domain.</p>
+    <p>You can also restrict your results to a site or domain through the domains selector on the Advanced Search page.</p>
+    <code>Example: site:github.com</code>
+  </article>
+ </section>
+</main>
   
     
   
