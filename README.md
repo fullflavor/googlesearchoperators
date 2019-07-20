@@ -1,1 +1,2 @@
-# googlesearchoperators
+<h1> Google Search Operator</h1>
+<p><font size="14">This project was created because I am familiar with SEO. These operators can help you gain insight into SEO opportunities and audit points you otherwise would not have identified as a result; the possibilities are endless. The examples I use is just a few of many.</font></p>
